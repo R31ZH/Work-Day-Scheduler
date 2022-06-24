@@ -9,6 +9,17 @@ $(document).ready(function () {
     localStorage.setItem(time, text);
   });
 
+  function timeTracker() {
+    var timeNow = moment().hour();
+
+    $(".time-block").each(function () {
+      var blockTime = parseInt($(this).attr("id").split("")[1]);
+
+      if (blockTime < timeNow) {
+        $(this).removeClass("future");
+        $(this).removeClass("present");
+        $(this).addClass("past");
+      }}};
 
 // var time = moment();
 // $("#currentDay").text(time.format("hh"));

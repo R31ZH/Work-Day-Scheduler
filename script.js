@@ -19,10 +19,33 @@ $(document).ready(function () {
         $(this).removeClass("future");
         $(this).removeClass("present");
         $(this).addClass("past");
-      }}};
+      } else if (blockTime === timeNow) {
+        $(this).removeClass("past");
+        $(this).removeClass("future");
+        $(this).addClass("present");
+      } else {
+        $(this).removeClass("present");
+        $(this).removeClass("past");
+        $(this).addClass("future");
+      }
+    });
+  }
+
+  $("#9AM .description").val(localStorage.getItem("9AM"));
+  $("#10AM .description").val(localStorage.getItem("10AM"));
+  $("#11AM .description").val(localStorage.getItem("11AM"));
+  $("#12PM .description").val(localStorage.getItem("12PM"));
+  $("#1PM .description").val(localStorage.getItem("1PM"));
+  $("#2PM .description").val(localStorage.getItem("2PM"));
+  $("#3PM .description").val(localStorage.getItem("3PM"));
+  $("#4PM .description").val(localStorage.getItem("4PM"));
+  $("#5PM .description").val(localStorage.getItem("5PM"));
+
+  timeTracker();
+});
 
 // var time = moment();
-// $("#currentDay").text(time.format("hh"));
+// $("").text(time.format("hh"));
 
 // let pastTime = ;
 // let presentTime = time;
@@ -32,9 +55,3 @@ $(document).ready(function () {
 
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
-// WHEN I click into a time block
-// THEN I can enter an event
-// WHEN I click the save button for that time block
-// THEN the text for that event is saved in local storage
-// WHEN I refresh the page
-// THEN the saved events persist

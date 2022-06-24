@@ -33,6 +33,11 @@ textarea{
   font-size: 25px;
 }
 
+.block{
+  border: 10px solid aqua;
+  font-size: 20px;
+}
+
 .time-block{
   text-align: center;
   border-radius: 15px;

@@ -1,5 +1,5 @@
 var today = moment();
-$("#currentDay").text(today.format("MMM Do, YYYY"));
+$("#currentDay").text(today.format("hh:mm" + ", " + "MMM Do, YYYY"));
 
 // GIVEN I am using a daily planner to create a schedule
 // WHEN I open the planner

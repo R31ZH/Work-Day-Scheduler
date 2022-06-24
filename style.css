@@ -34,20 +34,10 @@ textarea{
 }
 
 .block{
-  border: 10px solid black;
+  border: 10px solid aqua;
   font-size: 20px;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: rgb(211, 208, 208);
   
 }
-
-.btnstuff{
-  background-color: #06AED5;
-  border-radius: 20px;
-}
-
 
 .time-block{
   text-align: center;

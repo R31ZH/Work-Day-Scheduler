@@ -1,11 +1,15 @@
 var today = moment();
 $("#currentDay").text(today.format("hh:mm" + ", " + "MMM Do, YYYY"));
 
-// GIVEN I am using a daily planner to create a schedule
-// WHEN I open the planner
-// THEN the current day is displayed at the top of the calendar
-// WHEN I scroll down
-// THEN I am presented with time blocks for standard business hours
+// var time = moment();
+// $("#currentDay").text(time.format("hh"));
+
+// let pastTime = ;
+// let presentTime = time;
+// let futureTime =;
+
+// if(pastTime < )
+
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
 // WHEN I click into a time block
